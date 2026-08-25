@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMMERCIALS</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Cairo', sans-serif; background: #0d0d0d; color: #fff; min-height: 100vh; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: rgba(20,20,20,0.9); border-bottom: 1px solid #222; }
+  .logo { font-size: 24px; font-weight: bold; color: #ff4757; }
+  .back-btn { color: #fff; text-decoration: none; background: #1a1a1a; padding: 10px 22px; border-radius: 8px; transition: 0.3s; }
+  .back-btn:hover { background: #ff4757; }
+  .section-title { text-align: center; font-size: 32px; margin: 40px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 0 40px 60px; max-width: 1300px; margin: auto; }
+  .card { position: relative; border-radius: 14px; overflow: hidden; cursor: pointer; background: #1a1a1a; aspect-ratio: 16/9; transition: transform 0.3s; }
+  .card:hover { transform: translateY(-6px); }
+  .card video { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .play-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; }
+  .card:hover .play-overlay { opacity: 1; }
+  .play-btn { width: 60px; height: 60px; background: #ff4757; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+  footer { text-align: center; padding: 30px; color: #777; border-top: 1px solid #222; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SOHIB</div>
+  <a href="index.html" class="back-btn">← رجوع للرئيسية</a>
+</header>
+
+<h2 class="section-title">🎬 COMMERCIALS</h2>
+
+<div class="grid">
+  <div class="card" onclick="openVideo('videos/ad1.mp4')">
+   <video src="videos/ad1.mp4#t=2" muted preload="metadata"></video>
+
+    <div class="play-overlay"><div class="play-btn">▶</div></div>
+  </div>
+  <div class="card" onclick="openVideo('videos/ad2.mp4')">
+    <video src="videos/ad2.mp4" muted preload="metadata"></video>
+    <div class="play-overlay"><div class="play-btn">▶</div></div>
+  </div>
+  <div class="card" onclick="openVideo('videos/ad3.mp4')">
+    <video src="videos/ad3.mp4" muted preload="metadata"></video>
+    <div class="play-overlay"><div class="play-btn">▶</div></div>
+  </div>
+  <div class="card" onclick="openVideo('videos/ad4.mp4')">
+    <video src="videos/ad4.mp4" muted preload="metadata"></video>
+    <div class="play-overlay"><div class="play-btn">▶</div></div>
+  </div>
+  <div class="card" onclick="openVideo('videos/ad5.mp4')">
+    <video src="videos/ad5.mp4" muted preload="metadata"></video>
+    <div class="play-overlay"><div class="play-btn">▶</div></div>
+  </div>
+</div>
+
+<div id="videoModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:100; align-items:center; justify-content:center;">
+  <span onclick="closeVideo()" style="position:absolute; top:20px; left:30px; font-size:36px; cursor:pointer;">✕</span>
+  <video id="videoPlayer" controls autoplay style="width:85%; max-width:900px; border-radius:12px;"></video>
+</div>
+
+<footer>© 2026 صهيب أحمد — جميع الحقوق محفوظة</footer>
+
+<script>
+function openVideo(src) {
+  var modal = document.getElementById('videoModal');
+  var player = document.getElementById('videoPlayer');
+  player.src = src;
+  modal.style.display = 'flex';
+}
+function closeVideo() {
+  var modal = document.getElementById('videoModal');
+  var player = document.getElementById('videoPlayer');
+  player.pause();
+  player.src = '';
+  modal.style.display = 'none';
+}
+document.getElementById('videoModal').addEventListener('click', function(e){
+  if (e.target === this) closeVideo();
+});
+</script>
+</body>
+</html>
