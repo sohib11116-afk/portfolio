@@ -1,176 +1,60 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صهيب أحمد — بورتفوليو</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Cairo', sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      min-height: 100vh;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: rgba(20, 20, 20, 0.9);
-      border-bottom: 1px solid #222;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ff4757;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 25px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff4757;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 900;
-    }
-
-    .hero h1 span {
-      color: #ff4757;
-    }
-
-    .hero p {
-      color: #aaa;
-      margin-top: 15px;
-      font-size: 18px;
-    }
-
-    .sections {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1a1a1a;
-      border-radius: 16px;
-      overflow: hidden;
-      text-decoration: none;
-      color: #fff;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card-img {
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 60px;
-    }
-
-    .red {
-      background: linear-gradient(135deg, #ff4757, #c0392b);
-    }
-
-    .blue {
-      background: linear-gradient(135deg, #3498db, #2c3e50);
-    }
-
-    .green {
-      background: linear-gradient(135deg, #2ecc71, #27ae60);
-    }
-
-    .card-body {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card-body h3 {
-      font-size: 22px;
-    }
-
-    .card-body p {
-      color: #999;
-      font-size: 14px;
-      margin-top: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Performance ads and short-form videos that make people stop.">
+  <title>SOHIB® — Creative Editor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <div class="logo"> SOHIB AHMED</div>
-    <nav>
-      <a href="#work">PROJECTS</a>
-      <a href="#contact"> CONTACT ME</a>
+  <main>
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Sohib home">SOHIB<span>®</span></a>
+      <div class="nav-links"><a href="#work">WORK</a><a href="#gallery">GALLERY</a><a href="#about">ABOUT</a></div>
+      <button class="talk-button" data-contact="NEW PROJECT">LET'S TALK <b>↗</b></button>
     </nav>
-  </header>
+    <div class="mobile-nav"><a href="#work">WORK</a><a href="#gallery">GALLERY</a><a href="#about">ABOUT</a></div>
 
-  <section class="hero">
-    <h1>مرحباً، أنا <span>SOHIB AHMED</span></h1>
-    <p>مونتير فيديو — إعلانات • ريلز</p>
-  </section>
+    <section id="top" class="hero">
+      <div class="hero-kicker"><span class="pulse"></span> CREATIVE EDITOR / 2025—26</div>
+      <h1>MAKE<br><i>THEM</i> STOP.</h1>
+      <p class="hero-copy">إعلانات وفيديوهات قصيرة تتحرك بسرعة،<br>وتفضل عالقة في الدماغ.</p>
+      <a class="circle-cta" href="#work"><span>SCROLL<br>TO PLAY</span><b>↓</b></a>
+      <div class="hero-footer"><span>01—</span><span>BASED IN RIYADH · WORKING WORLDWIDE</span></div>
+    </section>
 
-  <section class="sections" id="work">
-    <a href="ads.html" class="card">
-      <div class="card-img red">🎬</div>
-      <div class="card-body">
-        <h3>COMMERCIALS</h3>
-        <p>إعلانات احترافية للعلامات التجارية</p>
+    <section id="work" class="work-section">
+      <div class="section-head" data-reveal><p>WHAT I DO <em>(PICK YOUR FORMAT)</em></p><p>START A PROJECT <span>↘</span></p></div>
+      <div class="projects">
+        <article class="project nova" data-reveal><button class="project-button" data-service="commercials"><div class="project-no">01</div><div class="visual"><div class="visual-word">SELL</div><div class="play">↗</div></div><div class="project-meta"><p>COMMERCIALS</p><p>AVAILABLE WORLDWIDE</p></div><h2>ADS THAT SELL</h2><span class="project-open">↗</span></button></article>
+        <article class="project sodo" data-reveal><button class="project-button" data-service="reels"><div class="project-no">02</div><div class="visual"><div class="visual-word">LOOP</div><div class="play">↗</div></div><div class="project-meta"><p>REELS</p><p>AVAILABLE WORLDWIDE</p></div><h2>SHORT. SHARP. SHAREABLE.</h2><span class="project-open">↗</span></button></article>
+        <article class="project kay" data-reveal><button class="project-button" data-service="motion"><div class="project-no">03</div><div class="visual"><div class="visual-word">MOVE</div><div class="play">↗</div></div><div class="project-meta"><p>MOTION GRAPHICS</p><p>AVAILABLE WORLDWIDE</p></div><h2>DESIGN IN MOTION</h2><span class="project-open">↗</span></button></article>
       </div>
-    </a>
-    <!-- <a href="motion.html" class="card">
-    <div class="card-img blue">✨</div>
-    <div class="card-body">
-      <h3>Motion graphic</h3>
-      <p>أنيميشن ورسوم متحركة إبداعية</p>
-    </div>
-  </a> -->
-    <a href="reels.html" class="card">
-      <div class="card-img green">📱</div>
-      <div class="card-body">
-        <h3>reels , shorts</h3>
-        <p>محتوى قصير جذاب لمنصات السوشيال ميديا</p>
-      </div>
-    </a>
-  </section>
+    </section>
 
-  <footer id="contact">© 2026 صهيب احمد — جميع الحقوق محفوظة</footer>
+    <section id="gallery" class="gallery-section">
+      <div class="gallery-heading" data-reveal><div><p>MY GALLERY / 09 FILMS</p><h2>PRESS <i>PLAY.</i></h2></div><p>هنا بيتعرض شغلك الحقيقي.<br>كل مكان جاهز لفيديو ومعلوماته.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-card has-video" data-video="adidas"><div class="gallery-frame"><video poster="https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-poster.jpg" muted playsinline preload="none"></video><span class="gallery-index">01</span><strong>ADIDAS</strong><span class="gallery-play">▶</span></div><div class="gallery-meta"><span>COMMERCIAL</span><span>ADIDAS COMMERCIAL</span><span>PLAY</span></div></button>
+        <button class="gallery-card has-video" data-video="davinci"><div class="gallery-frame"><video poster="https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-poster.jpg" muted playsinline preload="none"></video><span class="gallery-index">02</span><strong>DAVINCI</strong><span class="gallery-play">▶</span></div><div class="gallery-meta"><span>REEL</span><span>DAVINCI COURSE</span><span>PLAY</span></div></button>
+        <button class="gallery-card has-video" data-video="capcut"><div class="gallery-frame"><video poster="https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-poster.jpg" muted playsinline preload="none"></video><span class="gallery-index">03</span><strong>CAPCUT</strong><span class="gallery-play">▶</span></div><div class="gallery-meta"><span>REEL</span><span>CAPCUT COURSE</span><span>PLAY</span></div></button>
+        <button class="gallery-card gallery-pink"><div class="gallery-frame"><span class="gallery-index">04</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>COMMERCIAL</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+        <button class="gallery-card gallery-yellow"><div class="gallery-frame"><span class="gallery-index">05</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>REEL</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+        <button class="gallery-card gallery-purple"><div class="gallery-frame"><span class="gallery-index">06</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>MOTION</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+        <button class="gallery-card gallery-green"><div class="gallery-frame"><span class="gallery-index">07</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>COMMERCIAL</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+        <button class="gallery-card gallery-red"><div class="gallery-frame"><span class="gallery-index">08</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>REEL</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+        <button class="gallery-card gallery-dark"><div class="gallery-frame"><span class="gallery-index">09</span><strong>YOUR</strong><span class="gallery-play">+</span></div><div class="gallery-meta"><span>MOTION</span><span>YOUR NEXT PROJECT</span><span>AVAILABLE</span></div></button>
+      </div>
+    </section>
+
+    <section id="about" class="manifesto"><p class="eyebrow" data-reveal>THE GOOD STUFF</p><h2 data-reveal>أفكار <i>كبيرة.</i><br>فيديوهات <span>أكبر.</span></h2><div class="manifesto-bottom" data-reveal><p>من أول هوك لآخر فريم، كل ثانية هنا ليها هدف: توقف التمرير، تخلي الناس تحس، وتخلي البراند يتفكر.</p><div class="services"><span>CREATIVE DIRECTION</span><span>PAID ADS</span><span>SHORT-FORM EDITING</span><span>MOTION DESIGN</span></div></div></section>
+    <section class="contact"><p>HAVE A BRIEF?</p><button class="contact-trigger" data-contact="NEW PROJECT">LET'S MAKE<br><i>NOISE.</i> <b>↗</b></button><div><span>© SOHIB STUDIO</span><span>ALL GOOD THINGS, 2026</span><span><a href="mailto:sohibamed11@icloud.com?subject=New%20video%20project">EMAIL</a> · <a href="https://www.instagram.com/s_sohib_ahmed/" target="_blank" rel="noreferrer">INSTAGRAM</a> · <a href="https://wa.me/966596570098?text=Hi%20Sohib%2C%20I%27d%20like%20to%20discuss%20a%20video%20project." target="_blank" rel="noreferrer">WHATSAPP</a></span></div></section>
+  </main>
+
+  <div class="service-modal hidden" id="service-modal"><button class="service-backdrop" data-close="service"></button><article class="service-panel"><button class="service-close" data-close="service">×</button><p id="service-kicker"></p><div class="service-visual"><strong id="service-word"></strong><span id="service-label"></span></div><div class="service-info"><div><small>WHAT IT IS</small><h2 id="service-title"></h2><p id="service-description"></p></div><div><small>YOU GET</small><div id="service-deliverables"></div></div></div><button class="service-cta" id="service-cta"></button></article></div>
+  <div class="video-modal hidden" id="video-modal"><button class="video-backdrop" data-close="video"></button><div class="video-player-panel"><button class="video-close" data-close="video">×</button><div class="video-title"><span id="video-meta"></span><strong id="video-name"></strong></div><video id="video-player" controls playsinline preload="metadata"></video></div></div>
+  <div class="contact-drawer hidden" id="contact-drawer"><button class="drawer-backdrop" data-close="contact"></button><aside class="drawer-panel"><button class="drawer-close" data-close="contact">×</button><p id="contact-topic">LET'S WORK / NEW PROJECT</p><h2>READY TO<br><i>MAKE NOISE?</i></h2><p class="drawer-copy">اختار طريقة التواصل وابعت تفاصيل المشروع، المدة، والموعد المطلوب.</p><div class="drawer-links"><a href="https://www.instagram.com/s_sohib_ahmed/" target="_blank" rel="noreferrer"><span>01</span><strong>INSTAGRAM</strong><b>↗</b></a><button id="copy-email"><span>02</span><strong>COPY EMAIL</strong><b>+</b></button><a href="https://wa.me/966596570098?text=Hi%20Sohib%2C%20I%27d%20like%20to%20discuss%20a%20video%20project." target="_blank" rel="noreferrer"><span>03</span><strong>WHATSAPP</strong><b>↗</b></a></div></aside></div>
+  <script src="script.js"></script>
 </body>
-
 </html>
