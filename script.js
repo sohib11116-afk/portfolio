@@ -7,7 +7,8 @@ const videos = {
   adidas: { type:'COMMERCIAL / 01', title:'ADIDAS COMMERCIAL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-commercial.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-poster.jpg' },
   davinci: { type:'REEL / 02', title:'DAVINCI COURSE', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-course.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-poster.jpg' },
   capcut: { type:'REEL / 03', title:'CAPCUT COURSE', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-course.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-poster.jpg' },
-  simpleIntro: { type:'MOTION GRAPHICS / 06', title:'SIMPLE INTRO', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/simple-intro.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/simple-intro-poster.jpg' }
+  simpleIntro: { type:'MOTION GRAPHICS / 06', title:'SIMPLE INTRO', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/simple-intro.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/simple-intro-poster.jpg' },
+  reel05: { type:'REEL / 05', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-vs-premiere.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-vs-premiere-poster.jpg' }
 };
 
 const observer = new IntersectionObserver(entries => entries.forEach(entry => {
