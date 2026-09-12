@@ -4,6 +4,7 @@ const services = {
   motion: { no:'03', label:'MOTION GRAPHICS', word:'MOVE', title:'DESIGN IN MOTION', className:'kay', description:'نحوّل الهوية والكلام لحركة حية: تايبوجرافي، انتقالات، وعناصر بصرية تدي الفيديو شخصية واضحة.', items:['Motion direction','2D animation','Brand-led transitions'] }
 };
 const videos = {
+  reel04: { type:'REEL / 04', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/reel-04.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/reel-04-poster.jpg' },
   adidas: { type:'COMMERCIAL / 01', title:'ADIDAS COMMERCIAL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-commercial.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-poster.jpg' },
   davinci: { type:'REEL / 02', title:'DAVINCI COURSE', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-course.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-poster.jpg' },
   capcut: { type:'REEL / 03', title:'CAPCUT COURSE', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-course.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/capcut-poster.jpg' },
