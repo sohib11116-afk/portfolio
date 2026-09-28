@@ -4,6 +4,12 @@ const services = {
   motion: { no:'03', label:'MOTION GRAPHICS', word:'MOVE', title:'DESIGN IN MOTION', className:'kay', description:'نحوّل الهوية والكلام لحركة حية: تايبوجرافي، انتقالات، وعناصر بصرية تدي الفيديو شخصية واضحة.', items:['Motion direction','2D animation','Brand-led transitions'] }
 };
 const videos = {
+  project14: { type:'REEL / 07', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-14.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-14-poster.jpg' },
+  project15: { type:'REEL / 09', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-15.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-15-poster.jpg' },
+  project16: { type:'REEL / 10', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-16.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-16-poster.jpg' },
+  project17: { type:'REEL / 11', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-17.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-17-poster.jpg' },
+  project18: { type:'REEL / 12', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-18.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-18-poster.jpg' },
+  project19: { type:'REEL / 13', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-19.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/project-19-poster.jpg' },
   reel04: { type:'REEL / 04', title:'REEL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/reel-04.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/reel-04-poster.jpg' },
   adidas: { type:'COMMERCIAL / 01', title:'ADIDAS COMMERCIAL', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-commercial.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/adidas-poster.jpg' },
   davinci: { type:'REEL / 02', title:'DAVINCI COURSE', src:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-course.mp4', poster:'https://sohib-creative-editor.sohib11116.chatgpt.site/videos/davinci-poster.jpg' },
